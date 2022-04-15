@@ -48,6 +48,32 @@ p{
 }
 
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
 body{
     width: 100%;
 }
@@ -213,6 +239,13 @@ body{
     text-align: center;   
 }
 
+#product1 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+     padding-top: 20px;
+      
+}
 #product1 .pro{
     width: 23%;
     min-width: 250px;
@@ -223,6 +256,7 @@ body{
     box-shadow: 20px 20px 30px rgba( 0, 0, 0, 0.06);
     margin: 15px 0;
     transition: 0.3 s ease;
+    position: relative;
 
 }
 
@@ -234,7 +268,7 @@ body{
     width: 100%;
     border-radius: 20px;
 }
-#product1 .pro {
+#product1 .pro .des{
     text-align: start;
     padding: 10px 0;
 
@@ -251,12 +285,115 @@ body{
     font-size: 14px;
 }
 
-#product1 .pro .cart{
+#product1 .pro a box-icon{
     width: 40px;
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
     font-weight: 500;
-    color: ;
+   background-color: #f3f5f1;
+    position: absolute;
+    bottom:20px;
+    right: 10px;
+    padding: 6px 4px ;
+    
+} 
+
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
 }
 
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover ;
+    background-position: center;
+        
+}
+
+
+
+#banner h4{
+    color: #fff;
+    font-size: 26px;
+
+}
+#banner h2{
+    color: #fff;
+    font-size: 36px;
+    padding: 10px 0 ;
+
+}
+#banner h2 span{
+    color: #ef3636;
+}
+
+#banner button:hover{
+    background:#088178;
+    color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    background-image: url("img/banner/b17.jpg");
+    min-width: 860px;
+    height: 50vh;
+    background-size: cover ;
+    background-position: center;
+    padding: 30px;
+
+}
+
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+
+
+#sm-banner h4{
+    color: #fff;
+    font-size:28px;
+    font-weight: 300;
+}
+
+
+#sm-banner h2 {
+    color: #fff;
+    font-size:28px;
+    font-weight: 800;
+}
+
+
+#sm-banner span {
+    color: #fff ;
+    font-size:14px;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178 ;
+}
